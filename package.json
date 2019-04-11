@@ -1,0 +1,31 @@
+{
+	"name": "tei-hg-queue",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"start": "node -r esm server.js",
+		"start:dev": "nf start web-dev=1,worker-dev=1",
+		"worker": "node -r esm worker.js",
+		"worker:dev": "nodemon -r esm worker.js"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"@sentry/node": "^4.5.1",
+		"axios": "^0.17.1",
+		"bull": "^3.5.2",
+		"bull-arena": "^2.6.2",
+		"cron": "^1.6.0",
+		"dotenv": "^6.2.0",
+		"esm": "^3.0.67",
+		"express": "^4.16.3",
+		"express-basic-auth": "^1.1.6",
+		"ioredis": "^4.6.2",
+		"jsforce": "^1.9.1",
+		"morgan": "^1.9.1",
+		"nodemon": "^1.18.1",
+		"puppeteer": "^1.11.0",
+		"querystring": "^0.2.0",
+		"valid-url": "^1.0.9"
+	}
+}
