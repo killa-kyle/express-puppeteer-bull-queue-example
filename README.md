@@ -15,17 +15,16 @@
 
 
 # Usage
-- ADD NEW JOBS: to add new jobs to queue `http://localhost:3000/?sf_id=a060L00002AMOtxQAH&name=Ronald+Halbrooks&location=NC`
-- REFRESH QUEUE: `http://localhost:3000/refresh`
+- ADD NEW JOBS: to add new jobs to queue `http://localhost:3000/`
 - VIEW QUEUE: navigate to http://localhost:3000/arena
-    - username: `admin`
-    - password: `P@ssw0rd!`
+
 
 
 
 
 
 ------
+can be deployed to heroku 
 `heroku buildpacks:set jontewks/puppeteer`
 
 `heroku redis:maxmemory redis-parallel-54745 --policy allkeys-lru`

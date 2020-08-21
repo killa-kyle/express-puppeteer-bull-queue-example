@@ -17,12 +17,21 @@ app.get('/', (req, res) => {
   // default to 10 posts
 	if (!count) {
 		count = 10
-	}
+  }
+  
+// current timestamp in milliseconds
+  let ts = Date.now();
+  let date_ob = new Date(ts);
+  let date = date_ob.getDate();
+  let month = date_ob.getMonth() + 1;
+  let year = date_ob.getFullYear();
+
 
 	// add Job to Queue
 	queues[GET_LATEST_HN_STORIES].add({
-		count
-	})
+    count,
+    title: `HackerNews posts : ${year + "-" + month + "-" + date}`
+  })
 	return res.send('check your console')
 })
 
