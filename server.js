@@ -4,16 +4,17 @@ import url from 'url'
 
 import express from 'express'
 import Arena from 'bull-arena'
-import { queues, GET_LATEST_HN_STORIES } from './queues'
+
+import { queues, GET_LATEST_HN_STORIES } from './queues' // your 
 
 const app = express()
 const PORT = process.env.PORT || 3000
-const basicAuth = require('express-basic-auth')
 
 app.get('/', (req, res) => {
 	let { count } = req.query
 
-	// missing params
+  // missing param ?count=
+  // default to 10 posts
 	if (!count) {
 		count = 10
 	}
@@ -22,7 +23,7 @@ app.get('/', (req, res) => {
 	queues[GET_LATEST_HN_STORIES].add({
 		count
 	})
-	return res.send('')
+	return res.send('check your console')
 })
 
 // bull queue GUI at /arena
