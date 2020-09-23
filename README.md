@@ -2,7 +2,7 @@
 
 
 ## 1 click deploy
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/killa-kyle/express-puppeteer-bull-queue-example)
 
 
 # Setup
