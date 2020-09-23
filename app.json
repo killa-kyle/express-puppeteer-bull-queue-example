@@ -2,7 +2,7 @@
   "name": "Heroku Puppeteer Queue Example",
   "description": "A barebones Node.js app using Express, Bull, and Puppeteer",
   "repository": "https://github.com/killa-kyle/express-puppeteer-bull-queue-example",
-  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "logo": "https://image.flaticon.com/icons/png/512/115/115804.png",
   "buildpacks": [
     {
       "url": "heroku/nodejs"
