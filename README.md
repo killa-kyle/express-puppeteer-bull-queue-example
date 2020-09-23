@@ -11,7 +11,7 @@
 - start local redis with  ```redis-server```
 
 - ```npm install```
-- ```npm run dev```
+- ```npm run start:dev``` will start both server & worker process for dev
 
 
 # Usage

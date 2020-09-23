@@ -8,7 +8,7 @@ import Arena from 'bull-arena'
 import { queues, GET_LATEST_HN_STORIES } from './queues' // your 
 
 const app = express()
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 5000
 
 app.get('/', (req, res) => {
 	let { count } = req.query

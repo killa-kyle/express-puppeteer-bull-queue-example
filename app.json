@@ -1,0 +1,19 @@
+{
+  "name": "Heroku Puppeteer Queue Example",
+  "description": "A barebones Node.js app using Express, Bull, and Puppeteer",
+  "repository": "https://github.com/killa-kyle/express-puppeteer-bull-queue-example",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "buildpacks": [
+    {
+      "url": "https://github.com/jontewks/puppeteer-heroku-buildpack.git"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "keywords": [
+    "node",
+    "express",
+    "static"
+  ]
+}

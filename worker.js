@@ -17,7 +17,7 @@ Object.entries(queues).forEach(([queueName, queue]) => {
       console.log(`${queueName} finished job:`)
       switch (queueName) {
         case GET_LATEST_HN_STORIES:
-          // do something with your data here
+          // do something with your data here (send it off to a database etc)
           console.log(`got latest HN stories \n`, result)
           break
         default:

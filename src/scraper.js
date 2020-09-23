@@ -13,10 +13,10 @@ const Scraper = async (job) => {
   console.log("count is " + count)
   // start browser
   const browser = await puppeteer.launch({
-    headless: true,
+    headless: false,
     // devtools: true,
     ignoreHTTPSErrors: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    args: ["--no-sandbox", "--disable-setuid-sandbox"], // needed for heroku
   })
 
   // get latest HN Posts
@@ -47,7 +47,8 @@ const Scraper = async (job) => {
         }
       })
     }, count) // pass variable into execution context
-    await page.close()
+    await browser.close()
+
 
     return results
   }
