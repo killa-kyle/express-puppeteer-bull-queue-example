@@ -13,7 +13,7 @@ const Scraper = async (job) => {
   console.log("count is " + count)
   // start browser
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     // devtools: true,
     ignoreHTTPSErrors: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"], // needed for heroku
