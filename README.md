@@ -10,10 +10,11 @@
 - install  [foreman](https://github.com/strongloop/node-foreman) globally
 - install [nodemon](https://github.com/remy/nodemon/) globally
 - install [redis]() with ```brew install redis```
-- start local redis with  ```redis-server```
+- install project dependencies with ```npm install```
 
-- ```npm install```
-- ```npm run start:dev``` will start both server & worker process for dev
+- start local redis with  ```redis-server```
+- in new terminal start project with:
+  - ```npm run start:dev``` will start both server & worker process for dev
 
 
 # Usage

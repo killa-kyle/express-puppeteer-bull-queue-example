@@ -17,7 +17,13 @@
 		"dotenv": "^6.2.0",
 		"esm": "^3.0.67",
 		"express": "^4.16.3",
+		"nodemailer": "^6.4.11",
 		"nodemon": "^1.18.1",
-		"puppeteer": "^1.11.0"
+		"puppeteer": "^1.11.0",
+		"puppeteer-extra": "^3.1.15",
+		"puppeteer-extra-plugin-adblocker": "^2.11.6",
+		"puppeteer-extra-plugin-block-resources": "^2.2.7",
+		"puppeteer-extra-plugin-stealth": "^2.6.1",
+		"valid-url": "^1.0.9"
 	}
 }

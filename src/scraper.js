@@ -1,5 +1,14 @@
-const puppeteer = require("puppeteer")
+import puppeteer from "puppeteer-extra"
+import resourceBlock from "puppeteer-extra-plugin-block-resources"
+import stealthPlugin from "puppeteer-extra-plugin-stealth"
+import { PuppeteerExtraPluginAdblocker } from "puppeteer-extra-plugin-adblocker"
 
+const adBlocker = new PuppeteerExtraPluginAdblocker({
+  blockTrackers: true,
+})
+
+puppeteer.use(stealthPlugin())
+puppeteer.use(adBlocker)
 /******************************************************************
  * kick off scrape action
  *
@@ -47,6 +56,11 @@ const Scraper = async (job) => {
         }
       })
     }, count) // pass variable into execution context
+
+
+    let screenshotLink = `hn-${Date.now()}.png`
+    await page.screenshot({ path: `${screenshotLink}` })
+
     await browser.close()
 
 
