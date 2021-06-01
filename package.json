@@ -17,7 +17,7 @@
 		"dotenv": "^6.2.0",
 		"esm": "^3.0.67",
 		"express": "^4.16.3",
-		"nodemailer": "^6.4.11",
+		"nodemailer": "^6.4.16",
 		"nodemon": "^1.18.1",
 		"puppeteer": "^1.11.0",
 		"puppeteer-extra": "^3.1.15",
